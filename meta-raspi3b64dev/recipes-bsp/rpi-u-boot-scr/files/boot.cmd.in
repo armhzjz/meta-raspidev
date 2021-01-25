@@ -1,0 +1,4 @@
+fdt addr ${fdt_addr} && fdt get value bootargs /chosen bootargs
+
+setenv ipaddr 192.168.180.40
+setenv serverip 192.168.180.33
