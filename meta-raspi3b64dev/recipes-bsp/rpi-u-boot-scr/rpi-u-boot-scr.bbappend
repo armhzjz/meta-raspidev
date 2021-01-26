@@ -1,6 +1,6 @@
 FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
 
-SRC_URI = "file://boot_netargs.cmd.in"
+SRC_URI += "file://boot_netargs.cmd.in"
 
 do_compile_append() {
     if [ -f ${DEPLOYDIR}/boot.scr ]; then
