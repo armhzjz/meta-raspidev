@@ -2,7 +2,7 @@ FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 
 SRC_URI += "file://boot_netargs.cmd.in"
 
-do_compile_append() {
+do_compile:append() {
     if [ -f ${DEPLOYDIR}/boot.scr ]; then
         rm ${DEPLOYDIR}/boot.scr
     fi
